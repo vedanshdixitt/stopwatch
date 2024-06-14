@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2014/12/08/14/23/pocket-watch-560937_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.rectangle {
+    background-color: rgba(22, 1, 1, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(19, 1, 1, 0.4);
+    margin-bottom: 30px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px; /* Adjust border radius for rounded corners */
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    width: 300px; /* Adjust width for a rectangular shape */
+    height: 150px; /* Adjust height for a rectangular shape */
+    margin-bottom: 30px;
+}
+
+.timer {
+    font-size: 3rem;
+    color: #000; /* Black text color */
+    font-family: 'Pacifico', cursive; /* Example: Use a fancy font */
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* White text shadow */
+    animation: pulse 1s infinite; /* Fancy pulse animation */
+    transition: transform 0.3s ease-in-out;
+}
+
+.timer:hover {
+    transform: scale(1.1);
+    animation: none; /* Stop animation on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 300px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(76, 160, 175, 0.8); /* Semi-transparent green background for buttons */
+    color: rgb(59, 59, 59);
+    border: none;
+    border-radius: 15px; /* Adjust border radius for rounded corners */
+    padding: 15px;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: rgba(62, 123, 142, 0.8); 
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Add this at the end of your existing CSS */
+
+.watermark-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.watermark-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Indie Flower', cursive; /* Example: Use a funky and aesthetic font */
+    margin-bottom: 5px;
+}
+
+.github-link {
+    font-size: 0.8rem;
+    color: #3498db;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive; /* Use the same font for consistency */
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    color: #2980b9;
+}
+/* Additional CSS for the watermark */
+.watermark-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.watermark-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 5px;
+}
+
+.github-link {
+    font-size: 0.8rem;
+    color: #3498db;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    color: #2980b9;
+}
